@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service - VENUS GROUP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=4.0">
+    <style>
+        :root {
+            --glass: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+        }
+
+        .service-page {
+            min-height: 100vh;
+            background: #FAF7F2;
+            color: var(--color-cyprus);
+        }
+
+        .service-hero {
+            position: relative;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: -50px;
+            padding-top: 80px;
+        }
+
+        .service-hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .hero-content p {
+            color: #FFFFFF !important;
+            font-size: 1.5rem !important;
+            font-weight: 600;
+            opacity: 1;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8), 0 0 5px rgba(0, 0, 0, 0.6);
+        }
+
+        .detail-section {
+            position: relative;
+            z-index: 3;
+            max-width: 1200px;
+            margin: 0 auto 50px;
+            background: #FAF7F2;
+            border-radius: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            padding: 4rem;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 4rem;
+        }
+
+        .text-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--color-cyprus);
+        }
+
+        .text-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        .gallery-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            height: 200px;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 2rem;
+        }
+
+        .feature-list li {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .feature-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 25px;
+            height: 25px;
+            background: #2C2C2C;
+            color: #FAF7F2;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+        }
+
+        .cta-box {
+            background: #EDE8DF;
+            padding: 2rem;
+            border-radius: 20px;
+            margin-top: 3rem;
+            border: 1px solid #D8D0C4;
+        }
+
+        .back-nav {
+            margin-top: 40px;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--color-cyprus);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 1rem 2rem;
+            border: 2px solid var(--color-cyprus);
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: #2C2C2C;
+            color: #FAF7F2;
+        }
+
+        @media (max-width: 968px) {
+            .detail-section {
+                grid-template-columns: 1fr;
+                padding: 2rem;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html" style="color: inherit;">VENUS GROUP</a>
+            </div>
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="index.html#verticals">Our Businesses</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="service-page">
+        <div class="service-hero" id="hero-bg" data-theme="dark">
+            <div class="hero-content">
+                <h1 id="service-title" class="hero-title">Service Details</h1>
+                <p id="service-subtitle">Excellence in every layer of infrastructure.</p>
+            </div>
+        </div>
+
+        <section class="detail-section" data-theme="light">
+            <div class="text-content">
+                <h2 id="content-heading">Description</h2>
+                <p id="main-description">
+                    Loading professional insights...
+                </p>
+                <p id="extended-description">
+                    Our commitment to quality ensures that every project we touch reaches its full potential through
+                    meticulous planning and superior materials.
+                </p>
+
+                <ul class="feature-list" id="feature-list">
+                    <li>Premium Quality Assurance</li>
+                    <li>Expert Technical Support</li>
+                    <li>Sustainable Solutions</li>
+                    <li>Timely Project Delivery</li>
+                </ul>
+
+                <div class="cta-box">
+                    <h3>Interested in this service?</h3>
+                    <p>Contact our consultation team for a tailored proposal that meets your specific project needs.</p>
+                    <a href="index.html#contact" class="btn-discover"
+                        style="display:inline-block; margin-top:1rem;">Inquire Now</a>
+                </div>
+            </div>
+
+            <div class="gallery-section" id="gallery">
+                <div class="gallery-item"><img id="img1" src="" alt="Gallery 1"></div>
+                <div class="gallery-item"><img id="img2" src="" alt="Gallery 2"></div>
+                <div class="gallery-item"><img id="img3" src="" alt="Gallery 3"></div>
+                <div class="gallery-item"><img id="img4" src="" alt="Gallery 4"></div>
+            </div>
+        </section>
+
+        <!-- Brand Showcase (Only for Venus Paints) -->
+        <section class="container" id="brand-showcase" style="display: none; margin-bottom: 80px;" data-theme="light">
+            <div class="section-header center">
+                <h2 style="font-size: 2rem;">Authorized Partners</h2>
+                <p>Dealing with India's leading national paint brands.</p>
+            </div>
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; text-align: center; align-items: center;">
+                <div
+                    style="padding: 1.5rem; background: #FAF7F2; border-radius: 12px; font-weight: 800; border: 1px solid #EDE8DF;">
+                    Asian Paints</div>
+                <div
+                    style="padding: 1.5rem; background: #FAF7F2; border-radius: 12px; font-weight: 800; border: 1px solid #EDE8DF;">
+                    Berger Paints</div>
+                <div
+                    style="padding: 1.5rem; background: #FAF7F2; border-radius: 12px; font-weight: 800; border: 1px solid #EDE8DF;">
+                    Birla Opus</div>
+                <div
+                    style="padding: 1.5rem; background: #FAF7F2; border-radius: 12px; font-weight: 800; border: 1px solid #EDE8DF;">
+                    Nerolac</div>
+                <div
+                    style="padding: 1.5rem; background: #FAF7F2; border-radius: 12px; font-weight: 800; border: 1px solid #EDE8DF;">
+                    Indigo Paints</div>
+                <div
+                    style="padding: 1.5rem; background: #FAF7F2; border-radius: 12px; font-weight: 800; border: 1px solid #EDE8DF;">
+                    MRF Paints</div>
+                <div
+                    style="padding: 1.5rem; background: #FAF7F2; border-radius: 12px; font-weight: 800; border: 1px solid #EDE8DF;">
+                    Esdee</div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer data-theme="dark">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2>VENUS GROUP</h2>
+                <p>Built on Trust, Consistency, and Long-term Relationships. Powering Kerala’s trade sector since 1997.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Verticals</h4>
+                <ul>
+                    <li><a href="service.html?title=Venus Associates">Venus Associates</a></li>
+                    <li><a href="service.html?title=Venus Tools">Venus Tools</a></li>
+                    <li><a href="service.html?title=Venus Paints">Venus Paints</a></li>
+                    <li><a href="service.html?title=Venus Trading Company">Venus Trading</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li style="color: rgba(255,255,255,0.6); margin-bottom: 0.8rem;">Muvattupuzha, Ernakulam</li>
+                    <li style="color: rgba(255,255,255,0.6); margin-bottom: 0.8rem;">info@venusgroup.com</li>
+                    <li style="color: rgba(255,255,255,0.6);">+91 (485) XXX XXXX</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Venus Group of Companies. All Rights Reserved.</p>
+            <p>Designed for Excellence</p>
+        </div>
+    </footer>
+
+    <footer class="developer-footer" data-theme="dark">
+        <div class="container">
+            <div class="developer-content">
+                <a href="https://www.instagram.com/intellex.web?igsh=MXc4Z2Uwd243OHpqdA%3D%3D&amp;utm_source=qr"
+                    class="developer-link" target="_blank" rel="noopener noreferrer">
+                    <span>MEET THE DEVELOPERS</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const contentData = {
+            "Venus Associates": {
+                heading: "Paint Manufacturing & Distribution Experts",
+                mainDesc: "Venus Associates is the foundation firm of the group, serving as a dependable backbone for paint dealers across Kerala since 1997. We bridge the gap between quality manufacturing and consistent market supply.",
+                extendedDesc: "As a premier B2B distribution firm, we supply all essential products required for paint stores, including specialized paints, lubricants, abrasives, and painting accessories. With a statewide dealer network and 8 in-house delivery vehicles operating daily on structured routes, we ensure competitive pricing and reliable supply cycles.",
+                features: ["Statewide dealer network across Kerala", "8 in-house daily delivery vehicles", "Authorized distributor of major brands", "Comprehensive paint accessory portfolio"],
+                images: ["associates backg.jpeg", "images/associates_2.png", "images/associates_1.png", "images/painting_distribution.png"]
+            },
+            "Venus Tools": {
+                heading: "Precision Hand & Power Tool Distribution",
+                mainDesc: "Established in 2012, Venus Tools is a dedicated B2B distribution firm specializing in high-performance equipment for Kerala's hardware sector.",
+                extendedDesc: "We supply essential items required for hardware stores, from precision hand tools to high-torque power tools and accessories. Our structured distribution strength includes statewide dealer servicing and a dedicated fleet of 8 delivery vehicles ensuring consistent daily supply routes and competitive pricing models.",
+                features: ["Extensive Hand & Power tool range", "Daily structured supply routes", "8 dedicated logistics vehicles", "Authorized leading brand distributor"],
+                images: ["venus tools.jpeg", "images/hardware.png", "images/tools_1.png", "toolmate back.jpg"]
+            },
+            "Venus Paints": {
+                heading: "Multi-Brand Premium Retail Experience",
+                mainDesc: "Venus Paints is our B2C retail vertical, featuring one of Kerala's largest paint showrooms. Since 2017, we have redefined the retail paint shopping experience.",
+                extendedDesc: "Our flagship 12,000 sq. ft. showroom in Muvattupuzha (expanded in 2024) is complemented by strategic outlets in Palarivattom and Aluva. We deal with national leaders like Asian Paints, Berger, Birla Opus, and MRF, offering in-store color visualization studios and family-friendly environments for bulk and residential requirements.",
+                features: ["12,000 sq. ft. flagship showroom", "In-store color visualization studios", "Major brands: Asian, Berger, Birla Opus", "Bulk stock availability & delivery"],
+                images: ["paints back.jpeg", "images/paints_1.png", "images/paints.png", "images/associates_1.png"]
+            },
+            "Venus Trading Company": {
+                heading: "Specialized Sheenlac Industrial Distribution",
+                mainDesc: "Established in 2015, Venus Trading Company operates as a premier stock-keeping and distribution unit specializing in industrial thinners and allied materials.",
+                extendedDesc: "Based in Eroor, Ernakulam, we focus on authorized distribution for Sheenlac (Jenson & Nicholson), serving B2B dealers with quality-assured products. Our core strength lies in authentic material sourcing and maintaining consistent supply cycles for the industrial sector across Kerala.",
+                features: ["Authorized Sheenlac distributor", "Industrial thinner specialization", "Consistent B2B dealer servicing", "Authentic, quality-assured supply"],
+                images: ["venus trading.jpeg"]
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const title = urlParams.get('title') || "Venus Associates";
+
+            // Normalize title for matching (& vs and, case sensitivity)
+            const normalizedParam = title.toLowerCase().replace('&', 'and').trim();
+            const dataKey = Object.keys(contentData).find(key =>
+                key.toLowerCase().replace('&', 'and').trim() === normalizedParam
+            );
+
+            const data = contentData[dataKey] || contentData["Venus Associates"];
+
+            document.getElementById('service-title').textContent = title;
+            document.getElementById('hero-bg').style.backgroundImage = `url('${data.images[0]}')`;
+            document.getElementById('content-heading').textContent = data.heading;
+            document.getElementById('main-description').textContent = data.mainDesc;
+            document.getElementById('extended-description').textContent = data.extendedDesc;
+
+            // Update Gallery
+            const gallerySection = document.getElementById('gallery');
+            const validImages = data.images.filter(img => img);
+            
+            if (validImages.length === 1) {
+                gallerySection.style.gridTemplateColumns = '1fr';
+            } else {
+                gallerySection.style.gridTemplateColumns = '1fr 1fr';
+            }
+
+            for (let i = 1; i <= 4; i++) {
+                const imgEl = document.getElementById(`img${i}`);
+                if (data.images[i - 1]) {
+                    imgEl.src = data.images[i - 1];
+                    imgEl.style.display = 'block';
+                    imgEl.parentElement.style.display = 'block';
+                    if (validImages.length === 1) {
+                        imgEl.parentElement.style.height = '400px';
+                        imgEl.style.objectPosition = '90% center'; /* Shifts the image focal point heavily to the right */
+                    } else {
+                        imgEl.parentElement.style.height = '200px';
+                        imgEl.style.objectPosition = 'center';
+                    }
+                } else {
+                    imgEl.style.display = 'none';
+                    imgEl.parentElement.style.display = 'none';
+                }
+            }
+
+            // Update Features
+            const featureList = document.getElementById('feature-list');
+            featureList.innerHTML = '';
+            data.features.forEach(feat => {
+                const li = document.createElement('li');
+                li.textContent = feat;
+                featureList.appendChild(li);
+            });
+
+            document.title = `${title} - Venus Group Excellence`;
+
+            // Special Section for Venus Paints
+            if (dataKey === "Venus Paints") {
+                document.getElementById('brand-showcase').style.display = 'block';
+            } else {
+                document.getElementById('brand-showcase').style.display = 'none';
+            }
+        });
+    </script>
+    <script src="script.js?v=3.0"></script>
+</body>
+
+</html>

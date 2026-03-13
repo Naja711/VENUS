@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - VENUS GROUP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=3.0">
+    <style>
+        .about-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(30, 26, 22, 0.75), rgba(30, 26, 22, 0.88)), url('associates backg.jpeg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .story-section {
+            padding: 100px 0;
+            background: #FAF7F2;
+        }
+
+        .story-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .philosophy-section {
+            padding: 100px 0;
+            background: var(--color-sand);
+        }
+
+        .philosophy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .philosophy-card {
+            background: #FFFFFF;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-soft);
+            text-align: center;
+            border: 1px solid #EDE8DF;
+        }
+
+        .philosophy-card h3 {
+            margin-top: 0;
+            color: var(--color-cyprus);
+        }
+
+        .legacy-banner {
+            background: #1E1A16;
+            color: #FAF7F2;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .legacy-banner h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #FAF7F2;
+        }
+
+        .legacy-banner p {
+            color: rgba(250, 247, 242, 0.8);
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .story-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html" style="color: inherit;">VENUS GROUP</a>
+            </div>
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="index.html#verticals">Our Businesses</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-hero" data-theme="dark">
+            <div class="container">
+                <h1 style="font-size: 4rem; margin-bottom: 1rem;">Our Story</h1>
+                <p style="color: rgba(255,255,255,0.8); font-size: 1.5rem; max-width: 800px; margin: 0 auto;">Building a
+                    legacy of trust and quality in Kerala since 1997.</p>
+            </div>
+        </section>
+
+        <section class="story-section" data-theme="light">
+            <div class="container">
+                <div class="story-grid">
+                    <div>
+                        <span class="section-tag"
+                            style="color: var(--color-cyprus-light); font-weight: 800; letter-spacing: 2px; text-transform: uppercase;">The
+                            Beginning</span>
+                        <h2 style="margin-top: 1rem;">Roots in Muvattupuzha</h2>
+                        <p>Venus Group was established in 1997 in Muvattupuzha by three brothers— Muhammed C S, Haris C
+                            S, and Saheer C S. What started as a focused manufacturing and distribution unit has grown
+                            into a multi-vertical powerhouse serving both B2B and B2C markets across the state.</p>
+                        <p style="margin-top: 1rem;">From its first firm in 1997, the group has steadily expanded across
+                            distribution, retail, and trade sectors while maintaining a reputation for transparent
+                            business practices and dependable service.</p>
+                    </div>
+                    <div>
+                        <img src="images/associates_1.png" alt="Venus Legacy"
+                            style="border-radius: 20px; box-shadow: var(--shadow-hover);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="legacy-banner" data-theme="dark">
+            <div class="container">
+                <h2>The "Venus" Legacy</h2>
+                <p>The name “Venus” carries a deep legacy—inspired by the tobacco firm and the locally known Venus Hotel
+                    founded by the founders' late father. The name symbolized familiarity, goodwill, and trust in the
+                    community—values that continue to guide our operations today.</p>
+            </div>
+        </section>
+
+        <section class="philosophy-section" data-theme="light">
+            <div class="container">
+                <div class="section-header center">
+                    <h2>Our Philosophy</h2>
+                    <p>We believe growth is sustainable only when built on a solid foundation of ethics.</p>
+                </div>
+                <div class="philosophy-grid">
+                    <div class="philosophy-card">
+                        <h3>Trust</h3>
+                        <p>Long-term relationships built on honesty and transparent dealings.</p>
+                    </div>
+                    <div class="philosophy-card">
+                        <h3>Ethics</h3>
+                        <p>Maintaining integrity in every B2B and B2C interaction.</p>
+                    </div>
+                    <div class="philosophy-card">
+                        <h3>Consistency</h3>
+                        <p>Structured, stable, and disciplined operational cycles.</p>
+                    </div>
+                    <div class="philosophy-card">
+                        <h3>Partnership</h3>
+                        <p>Focused on long-term trade relationships rather than short-term gains.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="story-section" style="background: #FAF7F2;" data-theme="light">
+            <div class="container">
+                <div class="story-grid">
+                    <div>
+                        <img src="trading.jpg" alt="Venus Logistics"
+                            style="border-radius: 20px; box-shadow: var(--shadow-hover);">
+                    </div>
+                    <div>
+                        <h2>Operational Power</h2>
+                        <p>Across our distribution businesses, we operate an in-house fleet of delivery vehicles running
+                            daily routes across Kerala. This ensures consistent supply cycles and reliable service to
+                            our vast dealer network.</p>
+                        <p style="margin-top: 1rem;">Our focus is not just expansion, but structured and stable growth
+                            that benefits our partners as much as our company.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer data-theme="dark">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2>VENUS GROUP</h2>
+                <p>Built on Trust, Consistency, and Long-term Relationships. Powering Kerala’s trade sector since 1997.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Verticals</h4>
+                <ul>
+                    <li><a href="service.html?title=Venus Associates">Venus Associates</a></li>
+                    <li><a href="service.html?title=Venus Tools">Venus Tools</a></li>
+                    <li><a href="service.html?title=Venus Paints">Venus Paints</a></li>
+                    <li><a href="service.html?title=Venus Trading Company">Venus Trading</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li style="color: rgba(255,255,255,0.6); margin-bottom: 0.8rem;">Muvattupuzha, Ernakulam</li>
+                    <li style="color: rgba(255,255,255,0.6); margin-bottom: 0.8rem;">info@venusgroup.com</li>
+                    <li style="color: rgba(255,255,255,0.6);">+91 (485) XXX XXXX</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Venus Group of Companies. All Rights Reserved.</p>
+            <p>Designed for Excellence</p>
+        </div>
+    </footer>
+
+    <footer class="developer-footer" data-theme="dark">
+        <div class="container">
+            <div class="developer-content">
+                <a href="https://www.instagram.com/intellex.web?igsh=MXc4Z2Uwd243OHpqdA%3D%3D&amp;utm_source=qr"
+                    class="developer-link" target="_blank" rel="noopener noreferrer">
+                    <span>MEET THE DEVELOPERS</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js?v=3.0"></script>
+</body>
+
+</html>
