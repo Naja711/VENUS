@@ -9,7 +9,7 @@
     --color-white: #FFFFFF;
     --color-black: #1A1410;
 
-    --font-primary: 'Outfit', sans-serif;
+    --font-primary: 'Poppins', sans-serif;
 
     --shadow-soft: 0 10px 30px rgba(44, 44, 44, 0.08);
     --shadow-hover: 0 20px 40px rgba(44, 44, 44, 0.14);
@@ -1518,4 +1518,25 @@ footer li {
     p.hero-tagline {
         font-size: 1rem !important;
     }
+}
+
+.branch-card {
+    background: var(--color-white);
+    border-radius: 12px;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid #EDE8DF;
+    transition: var(--transition);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.branch-card:hover, .hover-lift:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--color-cyprus-light);
+}
+
+.hover-lift {
+    transition: var(--transition);
 }
