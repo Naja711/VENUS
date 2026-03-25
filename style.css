@@ -163,6 +163,34 @@ a {
     background: var(--color-cyprus-light);
 }
 
+.back-nav {
+    margin: 50px auto;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--color-cyprus);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.9rem 2.2rem;
+    border: 2px solid var(--color-cyprus);
+    border-radius: 50px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.back-link:hover {
+    background: var(--color-cyprus);
+    color: var(--color-sand);
+    transform: translateX(-5px);
+}
+
 /* --- Navbar (Travel Version) --- */
 .navbar {
     position: fixed;
