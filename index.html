@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 
     <!-- CSS File -->
-    <link rel="stylesheet" href="style.css?v=11.0">
+    <link rel="stylesheet" href="style.css?v=12.0">
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml"
@@ -26,8 +26,11 @@
     <!-- Navigation -->
     <header class="navbar">
         <div class="container nav-container">
-            <div class="logo">
-                <span>VENUS GROUP</span>
+            <div class="logo" style="display: flex; align-items: center;">
+                <a href="index.html" style="display: inline-flex; align-items: center; height: 55px;">
+                    <img src="images/venus_logo.png" alt="Venus Group Logo"
+                        style="height: 100%; width: auto; object-fit: contain;">
+                </a>
             </div>
             <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
                 <span></span>
@@ -37,7 +40,7 @@
             <nav class="nav-links" id="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About Us</a>
-                <a href="#verticals">Our Businesses</a>
+                <a href="#verticals">Businesses</a>
                 <a href="#brands">Our Brands</a>
                 <a href="#contact">Contact</a>
             </nav>
@@ -49,67 +52,54 @@
         <section id="hero" class="hero globe-hero" data-theme="dark">
             <div class="hero-bg-overlay"></div>
             <div class="container hero-container globe-hero-container">
-                <div class="brand-v-pulse">
-                    <svg width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20 20 L50 80 L80 20" fill="none" stroke="#fff" stroke-width="8"
-                            stroke-linecap="round">
-                            <animate attributeName="stroke-dasharray" from="0,200" to="200,0" dur="3s"
-                                repeatCount="indefinite" />
-                        </path>
-                        <circle cx="50" cy="80" r="5" fill="#fff">
-                            <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" />
-                        </circle>
-                    </svg>
-                </div>
+
                 <div class="hero-text-content">
                     <h1 class="hero-title" id="main-title">VENUS GROUP</h1>
-                    <p class="hero-tagline"
-                        style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; color: #fff;">Powering Kerala’s
-                        Paint & Hardware Trade Since 1997</p>
+
                     <p class="hero-description" id="main-description">A diversified business group operating across
                         manufacturing, distribution, retail, and trade — built on trust, consistency, and long-term
                         relationships.</p>
                 </div>
 
                 <div class="hero-actions">
-                    <a href="#verticals" class="btn-discover">Our Businesses</a>
+                    <a href="#verticals" class="btn-discover">Businesses</a>
                 </div>
 
                 <div class="floating-cards-wrapper" id="cards-container">
                     <div class="destination-card active" data-title="VENUS ASSOCIATES"
-                        data-description="Paint Manufacturing & Distribution backbone since 1997. Supplying essential products required for paint stores and dealers across Kerala."
+                        data-description="Powering paint distribution with decades of trust. Serving Kerala with consistency and scale."
                         data-bg="paints back.jpeg" style="background-image: url('paints back.jpeg')">
                         <div class="card-overlay"></div>
                         <div class="card-content">
-                            <span class="card-tag">Manufacturing</span>
-                            <h3>Associates</h3>
+                            <span class="card-tag">Associates</span>
+                            <h3>Venus Associates</h3>
                         </div>
                     </div>
                     <div class="destination-card" data-title="VENUS TOOLS"
-                        data-description="Dedicated B2B distribution firm for hand tools, power tools, and hardware. Serving dealers across Kerala with structured supply cycles."
-                        data-bg="venus tools.jpeg" style="background-image: url('venus tools.jpeg')">
+                        data-description="Precision tools, delivered with reliability. Supporting dealers with consistent supply."
+                        data-bg="tools back3.jpeg" data-bg-pos="center 100%" style="background-image: url('tools back3.jpeg')">
                         <div class="card-overlay"></div>
                         <div class="card-content">
-                            <span class="card-tag">Distribution</span>
-                            <h3>Tools</h3>
+                            <span class="card-tag">Tools</span>
+                            <h3>Tools & Hardware</h3>
                         </div>
                     </div>
                     <div class="destination-card" data-title="VENUS PAINTS"
-                        data-description="Multi-brand retail showrooms featuring flagship stores. One of Kerala's largest paint retail networks showcasing leading national brands."
+                        data-description="A complete destination for premium paints and finishes. Offering top brands and endless choices for every space."
                         data-bg="paints hero.jpeg" style="background-image: url('paints hero.jpeg')">
                         <div class="card-overlay"></div>
                         <div class="card-content">
-                            <span class="card-tag">Retail</span>
-                            <h3>Paints Showrooms</h3>
+                            <span class="card-tag">Paints</span>
+                            <h3>Multi branded Paints</h3>
                         </div>
                     </div>
-                    <div class="destination-card" data-title="VENUS TRADING COMPANY"
-                        data-description="Authorized stock keeping and distribution unit for Sheenlac industrial thinners. Ensuring quality-assured supply to B2B dealers."
+                    <div class="destination-card" data-title="Venus Trading & Co."
+                        data-description="Reliable distribution, backed by quality. Ensuring smooth and trusted supply chains."
                         data-bg="venus trading.jpeg" style="background-image: url('venus trading.jpeg')">
                         <div class="card-overlay"></div>
                         <div class="card-content">
-                            <span class="card-tag">Stockist</span>
-                            <h3>Trading Company</h3>
+                            <span class="card-tag">Trading Co.</span>
+                            <h3>Venus Trading & Co.</h3>
                         </div>
                     </div>
                 </div>
@@ -121,8 +111,8 @@
         <section id="about" class="about" data-theme="light">
             <div class="container about-container">
                 <div class="about-images">
-                    <img src="images/hardware.png" alt="Venus Tools" class="img-hardware float-img">
-                    <img src="images/paints.png" alt="Venus Paints" class="img-paints float-img-alt">
+                    <img src="partnership.jpeg" alt="Venus Tools Partnership" class="img-hardware float-img">
+                    <img src="transport.jpeg" alt="Venus Transport" class="img-paints float-img-alt">
                 </div>
                 <div class="about-text">
                     <span class="section-tag">Since 1997</span>
@@ -157,7 +147,7 @@
                         data-image="paints back.jpeg">
                         <div class="card-cover-image"
                             style="margin: -2.5rem -2rem 1.5rem -2rem; height: 200px; border-radius: 8px 8px 0 0; overflow: hidden;">
-                            <img src="associates service 1.jpg" alt="Venus Associates"
+                            <img src="images/associates service1.png" alt="Venus Associates"
                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
                                 onmouseover="this.style.transform='scale(1.05)'"
                                 onmouseout="this.style.transform='scale(1)'">
@@ -172,7 +162,7 @@
                         data-image="venus tools.jpeg">
                         <div class="card-cover-image"
                             style="margin: -2.5rem -2rem 1.5rem -2rem; height: 200px; border-radius: 8px 8px 0 0; overflow: hidden;">
-                            <img src="tools service.jpg" alt="Venus Tools"
+                            <img src="tools service.jpg" alt="Tools & Hardware"
                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
                                 onmouseover="this.style.transform='scale(1.05)'"
                                 onmouseout="this.style.transform='scale(1)'">
@@ -187,7 +177,7 @@
                         data-image="paints hero.jpeg">
                         <div class="card-cover-image"
                             style="margin: -2.5rem -2rem 1.5rem -2rem; height: 200px; border-radius: 8px 8px 0 0; overflow: hidden;">
-                            <img src="paints sevice.jpg" alt="Venus Paints"
+                            <img src="associates service.jpeg" alt="Venus Paints"
                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
                                 onmouseover="this.style.transform='scale(1.05)'"
                                 onmouseout="this.style.transform='scale(1)'">
@@ -197,17 +187,17 @@
                         <span class="view-more">View Details &rarr;</span>
                     </div>
                     <!-- Card 4 -->
-                    <div class="service-card hover-lift" data-title="Venus Trading Company"
+                    <div class="service-card hover-lift" data-title="Venus Trading & Co."
                         data-description="Authorized Sheenlac (Jenson & Nicholson) Industrial Thinner distribution. Quality-assured B2B dealer servicing."
                         data-image="venus trading.jpeg">
                         <div class="card-cover-image"
                             style="margin: -2.5rem -2rem 1.5rem -2rem; height: 200px; border-radius: 8px 8px 0 0; overflow: hidden;">
-                            <img src="venus trading.jpeg" alt="Venus Trading Company"
+                            <img src="venus trading.jpeg" alt="Venus Trading & Co."
                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
                                 onmouseover="this.style.transform='scale(1.05)'"
                                 onmouseout="this.style.transform='scale(1)'">
                         </div>
-                        <h3>Venus Trading Company</h3>
+                        <h3>Venus Trading & Co.</h3>
                         <p>Sheenlac Industrial Thinner Distribution. Specializing in industrial trade and logistics.</p>
                         <span class="view-more">View Details &rarr;</span>
                     </div>
@@ -216,42 +206,83 @@
         </section>
 
         <!-- Our Brand Section -->
-        <section id="brands" class="branch-section" data-theme="light" style="padding: 8rem 0; background-color: var(--color-sand);">
+        <section id="brands" class="branch-section" data-theme="light"
+            style="padding: 8rem 0; background-color: var(--color-sand);">
             <div class="container">
                 <div class="section-header center">
                     <h2>Our Brands</h2>
-                    <p>Discover our range of premium in-house brands, engineered for excellence and trusted by professionals across Kerala.</p>
+                    <p>Discover our range of premium in-house brands, engineered for excellence and trusted by
+                        professionals across Kerala.</p>
                 </div>
-                <div class="branch-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; margin-top: 3rem; max-width: 900px; margin-left: auto; margin-right: auto;">
-                    <!-- Brand 1: Vencoat -->
-                    <div class="branch-card hover-lift" style="overflow: hidden;">
-                        <div class="card-cover-image" style="height: 250px; overflow: hidden;">
-                            <img src="associates service 1.jpg" alt="Vencoat" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div style="padding: 2.5rem; flex-grow: 1;">
-                            <h3 style="color: var(--color-cyprus); margin-bottom: 1rem; font-size: 1.8rem;">VENCOAT</h3>
-                            <p style="font-size: 1rem; line-height: 1.7; color: rgba(44, 44, 44, 0.75);">Premium Coating Solutions. Our flagship in-house paint brand representing quality, durability, and a wide palette of choices for every surface.</p>
-                            <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(44, 44, 44, 0.08);">
-                                <span style="display: block; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-cyprus-light); font-weight: 700;">Proprietary Paint Brand</span>
+                <div class="branch-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; margin-top: 3rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+                    <!-- Brand 1: Vencoat (Animated Flip) -->
+                    <div class="flip-card" id="vencoat-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="card-cover-image" style="height: 250px; overflow: hidden;">
+                                    <img src="associates service 1.jpg" alt="Vencoat"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div style="padding: 2.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+                                    <h3 style="color: var(--color-cyprus); margin-bottom: 1rem; font-size: 1.8rem;">
+                                        VENCOAT</h3>
+                                    <p style="font-size: 1rem; line-height: 1.7; color: rgba(44, 44, 44, 0.75);">
+                                        Premium Coating Solutions. Our flagship in-house paint brand representing
+                                        quality, durability, and a wide palette of choices for every surface.</p>
+                                    <div
+                                        style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid rgba(44, 44, 44, 0.08);">
+                                        <span
+                                            style="display: block; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-cyprus-light); font-weight: 700;">Proprietary
+                                            Paint Brand</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <span class="logo-mini-text" style="font-size: 2.5rem; color: var(--color-sand); font-weight: 800; margin-bottom: 1.5rem;">V</span>
+                                <h3>VENCOAT</h3>
+                                <div class="tagline">Excellence. Durability. Beauty.</div>
+                                <p>Premium Coating Solutions. Engineered for lasting beauty and protection on every surface.</p>
+                                <a href="vencoat.html" class="btn-flip-action">Explore Brand Detail</a>
                             </div>
                         </div>
                     </div>
-                    <!-- Brand 2: Toolmate -->
-                    <div class="branch-card hover-lift" style="overflow: hidden;">
-                        <div class="card-cover-image" style="height: 250px; overflow: hidden;">
-                            <img src="toolmate back.jpg" alt="Toolmate" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div style="padding: 2.5rem; flex-grow: 1;">
-                            <h3 style="color: var(--color-cyprus); margin-bottom: 1rem; font-size: 1.8rem;">TOOLMATE</h3>
-                            <p style="font-size: 1rem; line-height: 1.7; color: rgba(44, 44, 44, 0.75);">Precision Hardware Tools. Engineering professional-grade equipment for experts, ensuring accuracy and reliability in every task.</p>
-                            <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(44, 44, 44, 0.08);">
-                                <span style="display: block; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-cyprus-light); font-weight: 700;">Professional Tool Brand</span>
+                    <!-- Brand 2: Tulmate (Animated Flip) -->
+                    <div class="flip-card" id="tulmate-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="card-cover-image" style="height: 250px; overflow: hidden;">
+                                    <img src="toolmate back.jpg" alt="Tulmate"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div style="padding: 2.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+                                    <h3 style="color: var(--color-cyprus); margin-bottom: 1rem; font-size: 1.8rem;">
+                                        TULMATE</h3>
+                                    <p style="font-size: 1rem; line-height: 1.7; color: rgba(44, 44, 44, 0.75);">Premium
+                                        Hardware Tools. Engineering professional-grade equipment for experts, ensuring
+                                        accuracy and reliability in every task.</p>
+                                    <div
+                                        style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid rgba(44, 44, 44, 0.08);">
+                                        <span
+                                            style="display: block; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--color-cyprus-light); font-weight: 700;">Professional
+                                            Tool Brand</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="images/tulmate_logo.png" alt="Tulmate Logo" class="logo-mini">
+                                <h3>TULMATE</h3>
+                                <div class="tagline">Verity. Variety. Versatility.</div>
+                                <p>Building Tomorrow, Today. Discover our professional range of welding electrodes and
+                                    expansion anchors.</p>
+                                <a href="tulmate.html" class="btn-flip-action">Explore Brand Detail</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- Why Partner Section -->
         <section class="dashboard-section" style="background: #1E1A16;" data-theme="dark">
             <div class="container">
@@ -304,26 +335,147 @@
                     <h2>Connect With Us</h2>
                     <p>Enquire about dealer opportunities and partnerships across Kerala.</p>
                 </div>
-                <div class="contact-grid">
-                    <div class="contact-info">
-                        <div class="info-item">
-                            <h4>Flagship Location</h4>
-                            <p>Venus Paints, MC Road<br>Muvattupuzha, Ernakulam, Kerala</p>
-                        </div>
-                        <div class="info-item">
-                            <h4>Email</h4>
-                            <p>info@venusgroup.com</p>
-                        </div>
-                        <div class="info-item">
-                            <h4>Call Us</h4>
-                            <p>+91 (485) XXX-XXXX</p>
-                        </div>
+                <div class="locations-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-bottom: 4rem;">
+                    <!-- Location 1 -->
+                    <div class="info-item" style="background: var(--color-sand); padding: 2rem; border-radius: 8px;">
+                        <h4 style="font-size: 1.1rem; color: var(--color-cyprus);">Venus Associates</h4>
+                        <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Kaliyar Road,
+                            Kadumpidy,<br>Muvattupuzha, Kerala- 686673</p>
+                        <ul style="list-style: none; font-size: 0.95rem; color: var(--color-cyprus);">
+                            <li style="margin-bottom: 0.5rem; display: flex; gap: 5px;"><strong>Mob:</strong>
+                                <div><a href="tel:8606319999"
+                                        style="color: inherit; text-decoration: none;">8606319999</a>, <a
+                                        href="tel:8606913333"
+                                        style="color: inherit; text-decoration: none;">8606913333</a></div>
+                            </li>
+                            <li style="margin-bottom: 0.5rem;"><strong>Mail:</strong> <a
+                                    href="mailto:associates@venusgp.com"
+                                    style="color: inherit; text-decoration: none;">associates@venusgp.com</a></li>
+                            <li style="margin-top: 1rem;"><a href="https://maps.app.goo.gl/SoMZXR97QHhag5iQ7"
+                                    target="_blank"
+                                    style="color: var(--color-cyprus-light); text-decoration: underline; font-weight: 600;">View
+                                    on Google Maps &rarr;</a></li>
+                        </ul>
+                    </div>
+                    <!-- Location 2 -->
+                    <div class="info-item" style="background: var(--color-sand); padding: 2rem; border-radius: 8px;">
+                        <h4 style="font-size: 1.1rem; color: var(--color-cyprus);">Venus Tools</h4>
+                        <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">VIII/701, Venus Building,
+                            Perumattom,<br>Muvattupuzha, Kerala- 686673</p>
+                        <ul style="list-style: none; font-size: 0.95rem; color: var(--color-cyprus);">
+                            <li style="margin-bottom: 0.5rem; display: flex; gap: 5px;"><strong>Mob:</strong>
+                                <div><a href="tel:8606862999"
+                                        style="color: inherit; text-decoration: none;">8606862999</a>, <a
+                                        href="tel:8086621999"
+                                        style="color: inherit; text-decoration: none;">8086621999</a></div>
+                            </li>
+                            <li style="margin-bottom: 0.5rem;"><strong>Mail:</strong> <a href="mailto:tools@venusgp.com"
+                                    style="color: inherit; text-decoration: none;">tools@venusgp.com</a></li>
+                            <li style="margin-top: 1rem;"><a href="https://maps.app.goo.gl/FrKszN3jh97cTVSX9"
+                                    target="_blank"
+                                    style="color: var(--color-cyprus-light); text-decoration: underline; font-weight: 600;">View
+                                    on Google Maps &rarr;</a></li>
+                        </ul>
+                    </div>
+                    <!-- Location 3 -->
+                    <div class="info-item" style="background: var(--color-sand); padding: 2rem; border-radius: 8px;">
+                        <h4 style="font-size: 1.1rem; color: var(--color-cyprus);">Venus Paints, Muvattupuzha</h4>
+                        <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Vazhappilly Junction, M.C
+                            Road,<br>Muvattupuzha, Kerala- 686669</p>
+                        <ul style="list-style: none; font-size: 0.95rem; color: var(--color-cyprus);">
+                            <li style="margin-bottom: 0.5rem; display: flex; gap: 5px;"><strong>Mob:</strong>
+                                <div><a href="tel:8606914444"
+                                        style="color: inherit; text-decoration: none;">8606914444</a>, <a
+                                        href="tel:8606924444"
+                                        style="color: inherit; text-decoration: none;">8606924444</a></div>
+                            </li>
+                            <li style="margin-bottom: 0.5rem;"><strong>Mail:</strong> <a
+                                    href="mailto:paints.mvpa@venusgp.com"
+                                    style="color: inherit; text-decoration: none;">paints.mvpa@venusgp.com</a></li>
+                            <li style="margin-top: 1rem;"><a href="https://maps.app.goo.gl/7tLY9dFpDDSwZJh28"
+                                    target="_blank"
+                                    style="color: var(--color-cyprus-light); text-decoration: underline; font-weight: 600;">View
+                                    on Google Maps &rarr;</a></li>
+                        </ul>
+                    </div>
+                    <!-- Location 4 -->
+                    <div class="info-item" style="background: var(--color-sand); padding: 2rem; border-radius: 8px;">
+                        <h4 style="font-size: 1.1rem; color: var(--color-cyprus);">Venus Paints, Ernakulam</h4>
+                        <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Besides Palarivattom
+                            Flyover, NH Bypass,<br>Ernakulam, Kerala- 682024</p>
+                        <ul style="list-style: none; font-size: 0.95rem; color: var(--color-cyprus);">
+                            <li style="margin-bottom: 0.5rem; display: flex; gap: 5px;"><strong>Mob:</strong>
+                                <div><a href="tel:8606915555"
+                                        style="color: inherit; text-decoration: none;">8606915555</a>, <a
+                                        href="tel:8606975555"
+                                        style="color: inherit; text-decoration: none;">8606975555</a></div>
+                            </li>
+                            <li style="margin-bottom: 0.5rem;"><strong>Mail:</strong> <a
+                                    href="mailto:paints.ekm@venusgp.com"
+                                    style="color: inherit; text-decoration: none;">paints.ekm@venusgp.com</a></li>
+                            <li style="margin-top: 1rem;"><a href="https://maps.app.goo.gl/5YERCp5ZQpHKRNq67"
+                                    target="_blank"
+                                    style="color: var(--color-cyprus-light); text-decoration: underline; font-weight: 600;">View
+                                    on Google Maps &rarr;</a></li>
+                        </ul>
+                    </div>
+                    <!-- Location 5 -->
+                    <div class="info-item" style="background: var(--color-sand); padding: 2rem; border-radius: 8px;">
+                        <h4 style="font-size: 1.1rem; color: var(--color-cyprus);">Venus Paints, Aluva</h4>
+                        <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Masjid Road, Near
+                            Karothukuzhy Hospital,<br>Aluva, Kerala- 683101</p>
+                        <ul style="list-style: none; font-size: 0.95rem; color: var(--color-cyprus);">
+                            <li style="margin-bottom: 0.5rem; display: flex; gap: 5px;"><strong>Mob:</strong>
+                                <div><a href="tel:8606882666"
+                                        style="color: inherit; text-decoration: none;">8606882666</a>, <a
+                                        href="tel:8606883666"
+                                        style="color: inherit; text-decoration: none;">8606883666</a></div>
+                            </li>
+                            <li style="margin-bottom: 0.5rem;"><strong>Mail:</strong> <a
+                                    href="mailto:paints.aluva@venusgp.com"
+                                    style="color: inherit; text-decoration: none;">paints.aluva@venusgp.com</a></li>
+                            <li style="margin-top: 1rem;"><a href="https://maps.app.goo.gl/q2m2VYye4VjkRDqm6"
+                                    target="_blank"
+                                    style="color: var(--color-cyprus-light); text-decoration: underline; font-weight: 600;">View
+                                    on Google Maps &rarr;</a></li>
+                        </ul>
+                    </div>
+                    <!-- Location 6 -->
+                    <div class="info-item" style="background: var(--color-sand); padding: 2rem; border-radius: 8px;">
+                        <h4 style="font-size: 1.1rem; color: var(--color-cyprus);">Venus Trading Company</h4>
+                        <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Thai Building,
+                            Puthenkulangara, Eroor North,<br>Tripunithura, Ernakulam, Kerala- 682306</p>
+                        <ul style="list-style: none; font-size: 0.95rem; color: var(--color-cyprus);">
+                            <li style="margin-bottom: 0.5rem; display: flex; gap: 5px;"><strong>Mob:</strong>
+                                <div><a href="tel:8606916666"
+                                        style="color: inherit; text-decoration: none;">8606916666</a></div>
+                            </li>
+                            <li style="margin-bottom: 0.5rem;"><strong>Mail:</strong> <a
+                                    href="mailto:venuseklm@gmail.com"
+                                    style="color: inherit; text-decoration: none;">venuseklm@gmail.com</a></li>
+                            <li style="margin-top: 1rem;"><a href="https://maps.app.goo.gl/umCDQbNRKfHcbD8t7"
+                                    target="_blank"
+                                    style="color: var(--color-cyprus-light); text-decoration: underline; font-weight: 600;">View
+                                    on Google Maps &rarr;</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contact-grid"
+                    style="grid-template-columns: 1fr; max-width: 800px; margin: 0 auto; background: var(--color-sand); padding: 3rem; border-radius: 12px; box-shadow: var(--shadow-soft); display: block;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <h3 style="color: var(--color-cyprus); font-size: 1.8rem; margin-bottom: 1rem;">Send Us a
+                            Message</h3>
+                        <p style="color: var(--color-cyprus); opacity: 0.8;">Have a question or need to get in touch?
+                            Fill out the form below.</p>
                     </div>
                     <form class="contact-form">
                         <input type="text" placeholder="Full Name" required>
                         <input type="email" placeholder="Email Address" required>
                         <textarea placeholder="Tell us about your requirements" rows="4" required></textarea>
-                        <button type="submit" class="btn-primary">Send Message</button>
+                        <button type="submit" class="btn-primary"
+                            style="align-self: center; padding: 1rem 3rem; margin-top: 1rem;">Submit</button>
                     </form>
                 </div>
             </div>
@@ -351,17 +503,17 @@
                     <li><a href="service.html?title=Venus Associates">Venus Associates</a></li>
                     <li><a href="service.html?title=Venus Tools">Venus Tools</a></li>
                     <li><a href="service.html?title=Venus Paints">Venus Paints</a></li>
-                    <li><a href="service.html?title=Venus Trading Company">Venus Trading</a></li>
+                    <li><a href="service.html?title=Venus Trading %26 Co.">Venus Trading & Co.</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>Contact Info</h4>
+                <h4>Our Brands</h4>
                 <ul>
-                    <li style="color: rgba(255,255,255,0.6); margin-bottom: 0.8rem;">Muvattupuzha, Ernakulam</li>
-                    <li style="color: rgba(255,255,255,0.6); margin-bottom: 0.8rem;">info@venusgroup.com</li>
-                    <li style="color: rgba(255,255,255,0.6);">+91 (485) XXX XXXX</li>
+                    <li><a href="index.html#brands">Vencoat</a></li>
+                    <li><a href="tulmate.html">Tulmate</a></li>
                 </ul>
             </div>
+
         </div>
         <div class="container footer-bottom">
             <p>&copy; 2026 Venus Group of Companies. All Rights Reserved.</p>

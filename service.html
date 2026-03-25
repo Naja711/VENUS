@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=4.0">
+    <link rel="stylesheet" href="style.css?v=5.0">
     <style>
         :root {
             --glass: rgba(255, 255, 255, 0.1);
@@ -109,7 +109,8 @@
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
-            height: 200px;
+            aspect-ratio: 1/1;
+            height: auto;
         }
 
         .gallery-item:hover {
@@ -199,8 +200,11 @@
 <body>
     <header class="navbar">
         <div class="container nav-container">
-            <div class="logo">
-                <a href="index.html" style="color: inherit;">VENUS GROUP</a>
+            <div class="logo" style="display: flex; align-items: center;">
+                <a href="index.html" style="display: inline-flex; align-items: center; height: 55px;">
+                    <img src="images/venus_logo.png" alt="Venus Group Logo"
+                        style="height: 100%; width: auto; object-fit: contain;">
+                </a>
             </div>
             <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
                 <span></span>
@@ -210,7 +214,7 @@
             <nav class="nav-links" id="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About Us</a>
-                <a href="index.html#verticals">Our Businesses</a>
+                <a href="index.html#verticals">Businesses</a>
                 <a href="index.html#brands">Our Brands</a>
                 <a href="index.html#contact">Contact</a>
             </nav>
@@ -314,17 +318,17 @@
                     <li><a href="service.html?title=Venus Associates">Venus Associates</a></li>
                     <li><a href="service.html?title=Venus Tools">Venus Tools</a></li>
                     <li><a href="service.html?title=Venus Paints">Venus Paints</a></li>
-                    <li><a href="service.html?title=Venus Trading Company">Venus Trading</a></li>
+                    <li><a href="service.html?title=Venus Trading %26 Co.">Venus Trading & Co.</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>Contact Info</h4>
+                <h4>Our Brands</h4>
                 <ul>
-                    <li style="color: rgba(255,255,255,0.6); margin-bottom: 0.8rem;">Muvattupuzha, Ernakulam</li>
-                    <li style="color: rgba(255,255,255,0.6); margin-bottom: 0.8rem;">info@venusgroup.com</li>
-                    <li style="color: rgba(255,255,255,0.6);">+91 (485) XXX XXXX</li>
+                    <li><a href="index.html#brands">Vencoat</a></li>
+                    <li><a href="tulmate.html">Tulmate</a></li>
                 </ul>
             </div>
+
         </div>
         <div class="container footer-bottom">
             <p>&copy; 2026 Venus Group of Companies. All Rights Reserved.</p>
@@ -356,25 +360,25 @@
                 mainDesc: "Venus Associates is the foundation firm of the group, serving as a dependable backbone for paint dealers across Kerala since 1997. We bridge the gap between quality manufacturing and consistent market supply.",
                 extendedDesc: "As a premier B2B distribution firm, we supply all essential products required for paint stores, including specialized paints, lubricants, abrasives, and painting accessories. With a statewide dealer network and 8 in-house delivery vehicles operating daily on structured routes, we ensure competitive pricing and reliable supply cycles.",
                 features: ["Statewide dealer network across Kerala", "8 in-house daily delivery vehicles", "Authorized distributor of major brands", "Comprehensive paint accessory portfolio"],
-                images: ["associates backg.jpeg", "images/associates_2.png", "images/associates_1.png", "images/painting_distribution.png"]
+                images: ["images/associates service1.png", "images/associates service 2.png", "images/associates service 3.png", "images/associates service 5.png"]
             },
             "Venus Tools": {
                 heading: "Precision Hand & Power Tool Distribution",
                 mainDesc: "Established in 2012, Venus Tools is a dedicated B2B distribution firm specializing in high-performance equipment for Kerala's hardware sector.",
                 extendedDesc: "We supply essential items required for hardware stores, from precision hand tools to high-torque power tools and accessories. Our structured distribution strength includes statewide dealer servicing and a dedicated fleet of 8 delivery vehicles ensuring consistent daily supply routes and competitive pricing models.",
                 features: ["Extensive Hand & Power tool range", "Daily structured supply routes", "8 dedicated logistics vehicles", "Authorized leading brand distributor"],
-                images: ["venus tools.jpeg", "images/hardware.png", "images/tools_1.png", "toolmate back.jpg"]
+                images: ["tools service.jpg", "images/tools service2.png", "images/tools service3.png", "images/tools service4.png", "images/tools service5.png"]
             },
             "Venus Paints": {
                 heading: "Multi-Brand Premium Retail Experience",
                 mainDesc: "Venus Paints is our B2C retail vertical, featuring one of Kerala's largest paint showrooms. Since 2017, we have redefined the retail paint shopping experience.",
                 extendedDesc: "Our flagship 12,000 sq. ft. showroom in Muvattupuzha (expanded in 2024) is complemented by strategic outlets in Palarivattom and Aluva. We deal with national leaders like Asian Paints, Berger, Birla Opus, and MRF, offering in-store color visualization studios and family-friendly environments for bulk and residential requirements.",
                 features: ["12,000 sq. ft. flagship showroom", "In-store color visualization studios", "Major brands: Asian, Berger, Birla Opus", "Bulk stock availability & delivery"],
-                images: ["paints back.jpeg", "images/paints_1.png", "images/paints.png", "images/associates_1.png"]
+                images: ["associates service.jpeg", "images/paints service2.png", "images/paints service3.png", "images/paints service4.png"]
             },
-            "Venus Trading Company": {
+            "Venus Trading & Co.": {
                 heading: "Specialized Sheenlac Industrial Distribution",
-                mainDesc: "Established in 2015, Venus Trading Company operates as a premier stock-keeping and distribution unit specializing in industrial thinners and allied materials.",
+                mainDesc: "Established in 2015, Venus Trading & Co. operates as a premier stock-keeping and distribution unit specializing in industrial thinners and allied materials.",
                 extendedDesc: "Based in Eroor, Ernakulam, we focus on authorized distribution for Sheenlac (Jenson & Nicholson), serving B2B dealers with quality-assured products. Our core strength lies in authentic material sourcing and maintaining consistent supply cycles for the industrial sector across Kerala.",
                 features: ["Authorized Sheenlac distributor", "Industrial thinner specialization", "Consistent B2B dealer servicing", "Authentic, quality-assured supply"],
                 images: ["venus trading.jpeg"]
@@ -402,7 +406,7 @@
             // Update Gallery
             const gallerySection = document.getElementById('gallery');
             const validImages = data.images.filter(img => img);
-            
+
             if (validImages.length === 1) {
                 gallerySection.style.gridTemplateColumns = '1fr';
             } else {
@@ -416,10 +420,12 @@
                     imgEl.style.display = 'block';
                     imgEl.parentElement.style.display = 'block';
                     if (validImages.length === 1) {
-                        imgEl.parentElement.style.height = '400px';
-                        imgEl.style.objectPosition = '90% center'; /* Shifts the image focal point heavily to the right */
+                        imgEl.parentElement.style.aspectRatio = '1 / 1';
+                        imgEl.parentElement.style.height = 'auto';
+                        imgEl.style.objectPosition = 'center';
                     } else {
-                        imgEl.parentElement.style.height = '200px';
+                        imgEl.parentElement.style.aspectRatio = '1 / 1';
+                        imgEl.parentElement.style.height = 'auto';
                         imgEl.style.objectPosition = 'center';
                     }
                 } else {

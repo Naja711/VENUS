@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TULMATE - Verity. Variety. Versatility.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=12.0">
+    <style>
+        :root {
+            --brand-dark: #1A1410;
+            --brand-accent: #B59A7A;
+        }
+
+        body {
+            background-color: #fbf9f6;
+        }
+
+        .tulmate-hero {
+            background: linear-gradient(rgba(26, 20, 16, 0.9), rgba(26, 20, 16, 0.95)), url('images/toolmate back.jpg') center/cover no-repeat;
+            padding: 12rem 0 8rem;
+            color: white;
+            text-align: center;
+        }
+
+        .brand-logo-large {
+            height: 120px;
+            margin-bottom: 2rem;
+            filter: brightness(0) invert(1);
+        }
+
+        .tagline-banner {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: var(--brand-accent);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: -4rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 20px;
+            padding: 3.5rem;
+            box-shadow: 0 20px 50px rgba(26, 20, 16, 0.08);
+            border: 1px solid #eee;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--brand-dark);
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+            text-align: left;
+        }
+
+        .check-mark {
+            color: var(--brand-accent);
+            font-weight: 800;
+            margin-top: 2px;
+        }
+
+        .stats-banner {
+            background: var(--brand-dark);
+            color: white;
+            padding: 6rem 0;
+            margin-top: 6rem;
+            text-align: center;
+        }
+
+        .join-section {
+            padding: 8rem 0;
+            background: #fff;
+            text-align: center;
+        }
+
+        .contact-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            background: #f4f1ec;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            margin: 0.5rem;
+            font-weight: 600;
+            color: var(--brand-dark);
+        }
+
+        @media (max-width: 768px) {
+            .product-grid {
+                margin-top: 2rem;
+                padding: 0 1rem;
+            }
+            .product-card {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html" style="display: inline-flex; align-items: center; height: 55px;">
+                    <img src="images/venus_logo.png" alt="Venus Group Logo" style="height: 100%; width: auto; object-fit: contain;">
+                </a>
+            </div>
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="index.html#verticals">Businesses</a>
+                <a href="index.html#brands">Our Brands</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="tulmate-hero">
+            <div class="container">
+                <img src="images/tulmate_logo.png" alt="Tulmate Logo" class="brand-logo-large">
+                <div class="tagline-banner">Verity. Variety. Versatility.</div>
+                <h1 style="font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1.1; margin-bottom: 2rem;">Building Tomorrow, Today.</h1>
+                <p style="max-width: 800px; margin: 0 auto; color: rgba(255,255,255,0.7); font-size: 1.2rem;">
+                    Premium professional-grade hardware solutions engineered for builders, experts and infrastructure excellence across Kerala.
+                </p>
+            </div>
+        </section>
+
+        <!-- Product Core Offerings -->
+        <section class="container">
+            <div class="product-grid">
+                <!-- Welding Electrodes -->
+                <div class="product-card">
+                    <div style="text-transform: uppercase; letter-spacing: 2px; color: var(--brand-accent); font-weight: 800; font-size: 0.8rem; margin-bottom: 1rem;">Core Product 01</div>
+                    <h2 style="font-size: 2.2rem; margin-bottom: 2rem; color: var(--brand-dark);">Welding Electrodes</h2>
+                    
+                    <div class="feature-item">
+                        <span class="check-mark">✓</span>
+                        <div><strong>Rutile-Based Coating:</strong> Easy arc striking, smooth re-strike, and low smoke reduced fumes.</div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check-mark">✓</span>
+                        <div><strong>Uniform Flux & Core:</strong> Consistent burn throughout with zero arc fluctuations for superior finishes.</div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check-mark">✓</span>
+                        <div><strong>Radiographic Tested:</strong> Welds free from internal defects, ensuring high joint integrity for critical work.</div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check-mark">✓</span>
+                        <div><strong>Global Compliance:</strong> CE, ISO, and BIS certified institutional quality trusted for large-scale projects.</div>
+                    </div>
+                </div>
+
+                <!-- Expansion Anchors -->
+                <div class="product-card">
+                    <div style="text-transform: uppercase; letter-spacing: 2px; color: var(--brand-accent); font-weight: 800; font-size: 0.8rem; margin-bottom: 1rem;">Core Product 02</div>
+                    <h2 style="font-size: 2.2rem; margin-bottom: 2rem; color: var(--brand-dark);">Expansion Anchors</h2>
+                    
+                    <div class="feature-item">
+                        <span class="check-mark">✓</span>
+                        <div><strong>Superior Grip:</strong> Strong expansion mechanism ensures a firm grip and uniform load distribution.</div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check-mark">✓</span>
+                        <div><strong>Electroplated Protection:</strong> Enhanced corrosion resistance for long-term stability in any environment.</div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check-mark">✓</span>
+                        <div><strong>Load & Holding Tested:</strong> Reliable anchoring in concrete and masonry for heavy and medium duty loads.</div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check-mark">✓</span>
+                        <div><strong>Easy Installation:</strong> Professional drill-insert-tighten design that significantly reduces labor time.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-banner">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; margin-bottom: 3rem;">Engineered for Performance</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 4rem;">
+                    <div>
+                        <div style="font-size: 3.5rem; font-weight: 800; color: var(--brand-accent);">100%</div>
+                        <p style="opacity: 0.6; text-transform: uppercase; letter-spacing: 2px;">Quality Inspected</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 3.5rem; font-weight: 800; color: var(--brand-accent);">CE/ISO</div>
+                        <p style="opacity: 0.6; text-transform: uppercase; letter-spacing: 2px;">Global Standards</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 3.5rem; font-weight: 800; color: var(--brand-accent);">B2B</div>
+                        <p style="opacity: 0.6; text-transform: uppercase; letter-spacing: 2px;">Dealer Focused</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Network -->
+        <section class="join-section">
+            <div class="container">
+                <h2 style="font-size: 3rem; margin-bottom: 1.5rem; color: var(--brand-dark);">Join Our Network</h2>
+                <p style="max-width: 700px; margin: 0 auto 3rem; font-size: 1.1rem;">
+                    Become a part of our distributor network and grow with a brand built on quality, consistency, and long-term partnerships.
+                </p>
+                <div style="margin-top: 3rem;">
+                    <a href="tel:8086621999" class="contact-pill" style="text-decoration: none;">📞 80866 21 999</a>
+                    <a href="tel:8086623999" class="contact-pill" style="text-decoration: none;">📞 80866 23 999</a>
+                    <a href="mailto:tulmateindia@gmail.com" class="contact-pill" style="text-decoration: none;">✉️ tulmateindia@gmail.com</a>
+                    <a href="https://www.instagram.com/tulmateindia" target="_blank" class="contact-pill" style="text-decoration: none;">📸 @tulmateindia</a>
+                </div>
+                <a href="index.html#contact" class="btn-primary" style="margin-top: 3rem; padding: 1.2rem 3rem;">Enquire for Dealership</a>
+            </div>
+        </section>
+    </main>
+
+    <footer data-theme="dark">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2>VENUS GROUP</h2>
+                <p>Built on Trust, Consistency, and Long-term Relationships. Powering Kerala’s trade sector since 1997.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Tulmate Products</h4>
+                <ul>
+                    <li><a href="#">Welding Electrodes</a></li>
+                    <li><a href="#">Expansion Anchors</a></li>
+                    <li><a href="#">Hand Tools</a></li>
+                    <li><a href="#">Power Tools</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Brands</h4>
+                <ul>
+                    <li><a href="index.html#brands">Vencoat</a></li>
+                    <li><a href="tulmate.html">Tulmate</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Venus Group of Companies. All Rights Reserved.</p>
+            <p>Tulmate - Precision Engineered</p>
+        </div>
+    </footer>
+
+    <script src="script.js?v=4.0"></script>
+</body>
+</html>

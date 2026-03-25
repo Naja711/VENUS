@@ -21,6 +21,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    /* --- BRAND CARD FLIP --- */
+    const flipCards = document.querySelectorAll('.flip-card');
+    flipCards.forEach(card => {
+        card.addEventListener('click', function(e) {
+            // Check if clicking the button inside
+            if (e.target.classList.contains('btn-flip-action')) {
+                return; // Let the link work normally
+            }
+            this.classList.toggle('flipped');
+        });
+    });
+
     /* --- GLOBE EXPRESS HERO CAROUSEL --- */
     const hero = document.getElementById('hero');
     const mainTitle = document.getElementById('main-title');
@@ -39,9 +51,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const bg = card.getAttribute('data-bg');
 
         // Update Background with Fade
+        const bgPos = card.getAttribute('data-bg-pos') || 'center';
         hero.classList.remove('hero-fade');
         void hero.offsetWidth; // Trigger reflow
         hero.style.backgroundImage = `url('${bg}')`;
+        hero.style.backgroundPosition = bgPos;
         hero.classList.add('hero-fade');
 
         // Update Text

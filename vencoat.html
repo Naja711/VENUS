@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VENCOAT - Protection, in every layer.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=12.0">
+    <style>
+        :root {
+            --brand-dark: #1A1410;
+            --brand-accent: #B59A7A;
+            --paint-accent: #D4AF37; /* A subtle gold for the brand */
+        }
+
+        body {
+            background-color: #fbf9f6;
+        }
+
+        .vencoat-hero {
+            background: linear-gradient(rgba(26, 20, 16, 0.8), rgba(26, 20, 16, 0.9)), url('associates service 1.jpg') center/cover no-repeat;
+            padding: 12rem 0 8rem;
+            color: white;
+            text-align: center;
+        }
+
+        .brand-text-large {
+            font-size: 5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            letter-spacing: 8px;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .tagline-banner {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: var(--brand-accent);
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: -4rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 20px;
+            padding: 3.5rem;
+            box-shadow: 0 20px 50px rgba(26, 20, 16, 0.08);
+            border: 1px solid #eee;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--brand-dark);
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+            text-align: left;
+        }
+
+        .check-mark {
+            color: var(--brand-accent);
+            font-weight: 800;
+            margin-top: 2px;
+        }
+
+        .stats-banner {
+            background: var(--brand-dark);
+            color: white;
+            padding: 6rem 0;
+            margin-top: 6rem;
+            text-align: center;
+        }
+
+        .join-section {
+            padding: 8rem 0;
+            background: #fff;
+            text-align: center;
+        }
+
+        .contact-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            background: #f4f1ec;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            margin: 0.5rem;
+            font-weight: 600;
+            color: var(--brand-dark);
+        }
+
+        @media (max-width: 768px) {
+            .brand-text-large {
+                font-size: 3rem;
+                letter-spacing: 4px;
+            }
+            .product-grid {
+                margin-top: 2rem;
+                padding: 0 1rem;
+            }
+            .product-card {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html" style="display: inline-flex; align-items: center; height: 55px;">
+                    <img src="images/venus_logo.png" alt="Venus Group Logo" style="height: 100%; width: auto; object-fit: contain;">
+                </a>
+            </div>
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="index.html#verticals">Businesses</a>
+                <a href="index.html#brands">Our Brands</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="vencoat-hero">
+            <div class="container">
+                <div class="brand-text-large">VENCOAT</div>
+                <div class="tagline-banner">Protection, in every layer.</div>
+                <h1 style="font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1.1; margin-bottom: 2rem;">Premium Coating Excellence.</h1>
+                <p style="max-width: 800px; margin: 0 auto; color: rgba(255,255,255,0.8); font-size: 1.2rem;">
+                    Advanced professional-grade paint solutions engineered for lasting beauty, durability, and superior surface protection across Kerala.
+                </p>
+            </div>
+        </section>
+
+        <!-- Product Core Offerings -->
+        <section class="container">
+            <div class="product-grid">
+                <!-- 1K Epoxy -->
+                <div class="product-card">
+                    <div style="text-transform: uppercase; letter-spacing: 2px; color: var(--brand-accent); font-weight: 800; font-size: 0.8rem; margin-bottom: 1rem;">Core Product 01</div>
+                    <h2 style="font-size: 2.2rem; margin-bottom: 2rem; color: var(--brand-dark);">1K EPOXY</h2>
+                    <p style="color: #666; margin-bottom: 2rem; font-style: italic;">Single Pack Anti Corrosive Epoxy Coating</p>
+                    
+                    <div class="feature-item">
+                        <span class="check-mark">✓</span>
+                        <div><strong>Advanced Epoxy Tech:</strong> Engineered for superior durability and long-term surface protection.</div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check-mark">✓</span>
+                        <div><strong>Superior Adhesion:</strong> Excellent bonding to both metal and concrete substrates.</div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check-mark">✓</span>
+                        <div><strong>Chemical Resistance:</strong> Creates a tough, resistant film when cured against harsh environments.</div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check-mark">✓</span>
+                        <div><strong>Outstanding Coverage:</strong> Provides a smooth, uniform finish with industrial-grade efficiency.</div>
+                    </div>
+                </div>
+
+                <!-- Spray Paints -->
+                <div class="product-card">
+                    <div style="text-transform: uppercase; letter-spacing: 2px; color: var(--brand-accent); font-weight: 800; font-size: 0.8rem; margin-bottom: 1rem;">Core Product 02</div>
+                    <h2 style="font-size: 2.2rem; margin-bottom: 2rem; color: var(--brand-dark);">Spray Paints</h2>
+                    <p style="color: #666; margin-bottom: 2rem; font-style: italic;">New Generation High-Pressure Formula</p>
+                    
+                    <div class="feature-item">
+                        <span class="check-mark">✓</span>
+                        <div><strong>Quick-Dry Formula:</strong> Brilliant, long-lasting finish with rapid drying performance for professionals.</div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check-mark">✓</span>
+                        <div><strong>Ultra-Smooth Application:</strong> High-pressure performance ensuring rich, glossy colours every time.</div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check-mark">✓</span>
+                        <div><strong>All-Surface Protection:</strong> Versatile design suitable for both interior and exterior applications.</div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="check-mark">✓</span>
+                        <div><strong>Eco-Friendly Design:</strong> Safety-focused formula that is completely CFC Free and sustainable.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-banner">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; margin-bottom: 3rem;">Engineered for Lasting Beauty</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 4rem;">
+                    <div>
+                        <div style="font-size: 3.5rem; font-weight: 800; color: var(--brand-accent);">100%</div>
+                        <p style="opacity: 0.6; text-transform: uppercase; letter-spacing: 2px;">Quality Inspected</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 3.5rem; font-weight: 800; color: var(--brand-accent);">EPOXY</div>
+                        <p style="opacity: 0.6; text-transform: uppercase; letter-spacing: 2px;">Advanced Technology</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 3.5rem; font-weight: 800; color: var(--brand-accent);">B2B</div>
+                        <p style="opacity: 0.6; text-transform: uppercase; letter-spacing: 2px;">Dealer Focused</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Network -->
+        <section class="join-section">
+            <div class="container">
+                <h2 style="font-size: 3rem; margin-bottom: 1.5rem; color: var(--brand-dark);">Join Our Network</h2>
+                <p style="max-width: 700px; margin: 0 auto 3rem; font-size: 1.1rem;">
+                    Become a part of the Vencoat distributor network and grow with a brand built on quality, consistency, and long-term partnerships.
+                </p>
+                <div style="margin-top: 3rem;">
+                    <a href="tel:8606319999" class="contact-pill" style="text-decoration: none;">📞 8606 31 9999</a>
+                    <a href="tel:8606913333" class="contact-pill" style="text-decoration: none;">📞 8606 91 3333</a>
+                    <a href="mailto:ceeyesind@gmail.com" class="contact-pill" style="text-decoration: none;">✉️ ceeyesind@gmail.com</a>
+                    <div class="contact-pill">📍 Muvattupuzha, Kerala</div>
+                </div>
+                <a href="index.html#contact" class="btn-primary" style="margin-top: 3rem; padding: 1.2rem 3rem;">Enquire for Dealership</a>
+            </div>
+        </section>
+    </main>
+
+    <footer data-theme="dark">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2>VENUS GROUP</h2>
+                <p>Built on Trust, Consistency, and Long-term Relationships. Powering Kerala’s trade sector since 1997.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Vencoat Products</h4>
+                <ul>
+                    <li><a href="#">1K Epoxy Paints</a></li>
+                    <li><a href="#">Industrial Primers</a></li>
+                    <li><a href="#">Spray Paints</a></li>
+                    <li><a href="#">Coating Accessories</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Brands</h4>
+                <ul>
+                    <li><a href="vencoat.html">Vencoat</a></li>
+                    <li><a href="tulmate.html">Tulmate</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Venus Group of Companies. All Rights Reserved.</p>
+            <p>Vencoat - Protection, in every layer.</p>
+        </div>
+    </footer>
+
+    <script src="script.js?v=4.0"></script>
+</body>
+</html>
