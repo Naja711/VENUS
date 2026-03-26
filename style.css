@@ -1591,7 +1591,7 @@ footer li {
 /* --- Brand Card Flip Animation --- */
 .flip-card {
     background-color: transparent;
-    height: 520px;
+    height: 600px;
     perspective: 1000px;
     cursor: pointer;
 }
@@ -1627,8 +1627,8 @@ footer li {
 }
 
 .flip-card-back {
-    background: linear-gradient(135deg, #1A1410 0%, #2C2C2C 100%);
-    color: white;
+    background: #ffffff;
+    color: var(--color-cyprus);
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
@@ -1636,18 +1636,34 @@ footer li {
     align-items: center;
     padding: 2.5rem;
     text-align: center;
+    border: 1px solid #EDE8DF;
 }
 
+.flip-card-back.dark-theme {
+    background: #000;
+    color: white;
+    border: none;
+}
+
+.flip-card-back.dark-theme p, 
+[data-theme="dark"] p, 
+.dark-theme p {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+
+
+
 .flip-card-back .logo-mini {
-    height: 60px;
-    margin-bottom: 1.5rem;
-    filter: brightness(0) invert(1); /* Make it white */
+    height: 160px;
+    margin-bottom: 2.5rem;
+    object-fit: contain;
 }
 
 .flip-card-back h3 {
     font-size: 2.2rem;
     margin-bottom: 1rem;
-    color: var(--color-sand);
+    color: inherit;
     letter-spacing: 2px;
 }
 
@@ -1656,8 +1672,14 @@ footer li {
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 2rem;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(44, 44, 44, 0.6);
 }
+
+.dark-theme .tagline {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+
 
 .btn-flip-action {
     background: var(--color-sand);
