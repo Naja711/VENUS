@@ -447,7 +447,7 @@ a {
 }
 
 .destination-card {
-    width: 120px;
+    width: 150px;
     height: 180px;
     background-size: cover;
     background-position: center;
@@ -485,8 +485,9 @@ a {
     position: absolute;
     bottom: 20px;
     left: 20px;
+    right: 20px;
+    width: auto !important;
     color: var(--color-white);
-    width: 200px;
     /* Ensure space for content */
 }
 
@@ -496,6 +497,8 @@ a {
     letter-spacing: 2px;
     opacity: 0.7;
     display: block;
+    width: 100%;
+    white-space: normal;
 }
 
 .card-content h3 {
@@ -503,8 +506,8 @@ a {
     margin-top: 5px;
     line-height: 1.2;
     transition: var(--transition);
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: normal;
+    word-wrap: break-word;
 }
 
 .destination-card.active .card-content h3 {
@@ -1420,8 +1423,9 @@ footer li {
     
     /* Adjust internal text sizing so it fits narrow cards */
     .destination-card .card-content {
-        width: calc(100% - 10px) !important;
         left: 5px !important;
+        right: 5px !important;
+        width: auto !important;
         bottom: 5px !important;
     }
     
